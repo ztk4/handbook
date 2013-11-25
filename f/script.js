@@ -51,6 +51,8 @@ $(document).ready(function() {
 		flipPage($(this).data('number'));
 	});
 	
-	if((window.location+"").indexOf("#") >= 0) flipPage((window.location+"").split("#")[1]);
+	if((window.location+"").indexOf("#") >= 0) {
+		flipPage((window.location+"").split("#")[1]);
+	}
 	
 });
