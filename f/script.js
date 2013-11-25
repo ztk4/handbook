@@ -5,7 +5,7 @@ $(document).ready(function() {
 		$bgPage.css('transform', 'rotate('+(i * (i%2 === 1 ? -0.75 : 1.25))+'deg)');
 		$bgPage.css('-ms-transform', 'rotate('+(i * (i%2 === 1 ? -0.75 : 1.25))+'deg)');
 		$bgPage.css('-webkit-transform', 'rotate('+(i * (i%2 === 1 ? -0.75 : 1.25))+'deg)');
-		$bgPage.css('z-index', -i-1);
+		$bgPage.css('z-index', 0);
 		$("#pageStack").append($bgPage);
 	}
 	
