@@ -3,6 +3,8 @@ $(document).ready(function() {
 	for(var i=0; i<5; i++) { //stagger pages in background
 		var $bgPage = $('<div class="bgPage" />');
 		$bgPage.css('transform', 'rotate('+(i * (i%2 === 1 ? -0.75 : 1.25))+'deg)');
+		$bgPage.css('-ms-transform', 'rotate('+(i * (i%2 === 1 ? -0.75 : 1.25))+'deg)');
+		$bgPage.css('-webkit-transform', 'rotate('+(i * (i%2 === 1 ? -0.75 : 1.25))+'deg)');
 		$bgPage.css('z-index', -i-1);
 		$("#pageStack").append($bgPage);
 	}
